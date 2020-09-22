@@ -1,0 +1,228 @@
+/* ----------------------------------------------------------------
+  Default
+-----------------------------------------------------------------*/
+
+body {
+/*    font-size: 16px;
+    color: black;
+    font-family: Helvetica, arial;*/
+    padding: 0;
+    margin: 0;
+    min-width: 100vw;
+    min-height: 100vh;
+   /* Internet Explorer 10 */
+    display: -ms-flexbox;
+    -ms-flex-pack: center;
+    -ms-flex-align: center;
+
+    /* Firefox */
+    display: -moz-box;
+    -moz-box-pack: center;
+    -moz-box-align: center;
+
+    /* Safari, Opera, and Chrome */
+    display: -webkit-box;
+    -webkit-box-pack: center;
+    -webkit-box-align: center;
+
+    /* W3C */
+    display: box;
+    box-pack: center;
+    box-align: center;
+}
+
+.main-display {
+   height: 400px;
+   width: 720px;
+}
+
+.full-display {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    min-height: 100vh;/*
+    margin-top: -365px;*/
+}
+
+.content-display {
+/*   height: 100%;
+   width: 100%;*/
+/*   padding: 1rem;*/
+   /* border: solid;*/
+}
+
+.consent-display {
+    width: 75%;
+}
+
+
+.reminder-display {
+  width: 300px;;
+  padding-left: 25px;
+  padding-top: 25px;
+  text-align: left;
+}
+
+#clock {
+  font-size: 64px;
+}
+
+.bttn {
+   width: 200px;
+   text-align: center;    
+}
+
+.b-left {
+  margin-right: auto
+}
+
+.b-right {
+  margin-left: auto
+}
+
+
+.offset-text {
+    top: -.25em;
+    line-height: 0;
+    position: relative;
+    vertical-align: baseline;
+}
+
+.absolute-center {
+    /* Internet Explorer 10 */
+    display: -ms-flexbox;
+    -ms-flex-pack: center;
+    -ms-flex-align: center;
+
+    /* Firefox */
+    display: -moz-box;
+    -moz-box-pack: center;
+    -moz-box-align: center;
+
+    /* Safari, Opera, and Chrome */
+    display: -webkit-box;
+    -webkit-box-pack: center;
+    -webkit-box-align: center;
+
+    /* W3C */
+    display: box;
+    box-pack: center;
+    box-align: center;
+}
+
+.flexSpaceBetween {
+    display: flex;
+    align-content: space-between;
+}
+
+.flex-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.flex-row {
+    display: -webkit-flex;
+    /* Safari 6.1+ */
+    display: flex;
+    flex-direction: row;
+    /* Safari */
+    -webkit-flex-direction: row;
+    align-items: center;
+}
+
+.flex-column {
+    display: -webkit-flex;
+    /* Safari 6.1+ */
+    display: flex;
+    flex-direction: column;
+    /* Safari */
+    -webkit-flex-direction: column;
+    align-items: center;
+}
+
+/* ----------------------------------------------------------------
+  Loading
+-----------------------------------------------------------------*/
+.spinner {
+  margin: 100px auto 0;
+  width: 70px;
+  text-align: center;
+}
+
+.spinner > div {
+  width: 18px;
+  height: 18px;
+  background-color: #333;
+
+  border-radius: 100%;
+  display: inline-block;
+  -webkit-animation: sk-bouncedelay 1.4s infinite ease-in-out both;
+  animation: sk-bouncedelay 1.4s infinite ease-in-out both;
+}
+
+.spinner .bounce1 {
+  -webkit-animation-delay: -0.32s;
+  animation-delay: -0.32s;
+}
+
+.spinner .bounce2 {
+  -webkit-animation-delay: -0.16s;
+  animation-delay: -0.16s;
+}
+
+@-webkit-keyframes sk-bouncedelay {
+  0%, 80%, 100% { -webkit-transform: scale(0) }
+  40% { -webkit-transform: scale(1.0) }
+}
+
+@keyframes sk-bouncedelay {
+  0%, 80%, 100% { 
+    -webkit-transform: scale(0);
+    transform: scale(0);
+  } 40% { 
+    -webkit-transform: scale(1.0);
+    transform: scale(1.0);
+  }
+}
+
+
+/* ----------------------------------------------------------------
+  Loading
+-----------------------------------------------------------------*/
+
+@keyframes loading{
+    100% {
+        transform: rotatez(360deg);
+    }
+}
+
+.load-div {
+    width: 500px;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+
+.load::before {
+    content: "";
+    color: white;
+    height: 50px;
+    width: 50px;
+    background: transparent;
+    border-radius: 50%;
+    border: 10px solid transparent;
+    border-color: #039BE5 #039BE5 transparent transparent;
+    animation: loading .6s infinite;
+}
+
+.loader{
+  width:100px;
+  height:100px;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  margin:10px 20px;
+}

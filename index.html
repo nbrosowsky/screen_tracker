@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en-US">
+
+<head>
+
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="N.P. Brosowsky" content="Typing Game" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Stylesheets
+	============================================= -->
+    <link rel="stylesheet" href="css/mvp.css" type="text/css" />
+    <link rel="stylesheet" href="css/style.css" type="text/css" />
+
+    <!--- Javascript on page load
+	============================================= -->
+    <script type="text/javascript">
+
+    </script>
+    <!-- Document Title
+	============================================= -->
+    <title>Typing Game</title>
+
+</head>
+
+<body>
+    <div id="main-display" class="main-display absolute-center">
+       <div><p><strong>You are currently <span id="full">Not Fullscreen</span> (press F11)</strong></p>
+            <p><strong>You are currently <span id="focus">Not Focused on this tab</span> (click away from the browser)</strong></p>
+           
+            <p>Event Log:</p>
+            <ul style="margin:0; margin-left: 5%; padding:0; list-style: none; line-height: 1; font-size: .8em" id="log"></ul>
+        </div>
+    </div>
+    
+    
+    <script type="text/javascript" src="js/screenfull.min.js"></script>
+    <script type="text/javascript" src="js/hotkeys.min.js"></script>
+    <script type="text/javascript" src="js/track_ontask.js"></script>
+
+
+
+</body>
